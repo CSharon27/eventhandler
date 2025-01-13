@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Schedule</title>
+  <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+  <header>
+    <h1>Interactive Event Schedule</h1>
+  </header>
+  <main>
+    <section class="schedule">
+      <h2>Upcoming Events</h2>
+      <div id="event-list">
+        <!-- Events will be dynamically added here -->
+      </div>
+    </section>
+    <section class="form-section">
+      <h2>Add a Reminder</h2>
+      <form id="reminder-form">
+        <label for="event">Event:</label>
+        <select id="event" required>
+          <option value="" disabled selected>Select an event</option>
+        </select>
+        <label for="reminder-date">Reminder Date:</label>
+        <input type="date" id="reminder-date" required>
+        <button type="submit">Add Reminder</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Interactive Schedule</p>
+  </footer>
+  <script src="script1.js"></script>
+</body>
+</html>
